@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'salesplus.wsgi.application'
+WSGI_APPLICATION = 'RichblackInc.wsgi.application'
 
 
 # Database
