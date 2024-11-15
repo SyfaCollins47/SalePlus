@@ -164,14 +164,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGOUT_REDIRECT_URL = 'login'
-
-
-# AWS_ACCESS_KEY_ID = 'AKIAQE43JUTMGLVBRU4R '
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'richblackinc'
-# AWS_S3_SIGNATURE_NAME = 's3v4',
-# AWS_S3_REGION_NAME = ' eu-west-1'
-# AWS_S3_FILE_OVERWRITE = False
-# AWS_DEFAULT_ACL =  None
-# AWS_S3_VERITY = True
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
