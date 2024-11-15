@@ -85,27 +85,27 @@ WSGI_APPLICATION = 'RichblackInc.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_schema',
-        'USER': 'root',
-        'PASSWORD': 'zeddtedy',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'test_schema',
+#         'USER': 'root',
+#         'PASSWORD': 'zeddtedy',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 # RENDER POSTGRESQL DATABASE LIVE
-# import dj_database_url
-# import environ
+import dj_database_url
+import environ
 
-# env = environ.Env()
-# environ.Env.read_env()
+env = environ.Env()
+environ.Env.read_env()
 
-# DATABASES = {
-#     'default': dj_database_url.parse(env('PRODUCTION_DATABASE_URL'))
-# }
+DATABASES = {
+    'default': dj_database_url.parse(env('PRODUCTION_DATABASE_URL'))
+}
 
 
 # Password validation
