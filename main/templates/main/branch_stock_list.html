@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="main-container">
+<h1>Branch Stock Levels</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Branch</th>
+            <th>Product</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for branch_stock in branch_stocks %}
+        <tr>
+            <td>{{ branch_stock.branch.branch_name }}</td>
+            <td>{{ branch_stock.product.name }}</td>
+            <td>{{ branch_stock.quantity }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

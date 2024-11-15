@@ -1,0 +1,13 @@
+<!-- @format -->
+
+{% extends 'main/base.html' %} {% block content %}
+<div class="main-container">
+  <h1>New Stock Transfer</h1>
+  <form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+  <a href="{% url 'transfer_list' %}" class="btn btn-secondary">Cancel</a>
+</div>
+
+{% endblock %}
